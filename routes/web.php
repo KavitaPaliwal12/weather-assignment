@@ -14,7 +14,6 @@ use App\Http\Controllers\WeatherController;
 */
 
 Route::get('/', function () {
-    return view('getCity');
+    return view('weather');
 });
-Route::post('getCityLatLong',[WeatherController::class,'getCityLatLong'])->name('getCityLatLong');
-Route::get('getReport/{city}',[WeatherController::class,'getReport'])->name('getReport');
+Route::post('getReport',[WeatherController::class,'getReport'])->name('getReport');

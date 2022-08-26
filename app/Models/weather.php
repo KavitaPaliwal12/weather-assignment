@@ -5,13 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class weather extends Model
+class Weather extends Model
 {
     use HasFactory;
-    protected $table = 'weather-report';
-
      protected $fillable = [
-        'City',
+        'city',
         'description',
         'temp',
         'feels_like',
